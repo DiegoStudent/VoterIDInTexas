@@ -1,0 +1,195 @@
+.main-body{
+    height:100%;
+    background:radial-gradient(  
+    rgb(67, 67, 67),
+    rgb(29, 29, 29));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+}
+.master-container {
+    position:absolute;
+    left:35%;
+    top:25%;
+}
+.grid-container{
+    display:flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item{
+    width: 280px;
+    height:161px;
+    background-color:rgb(52, 149, 156);
+    margin: 1px;
+    border-radius:15px;
+    position:relative;
+    transition: all 1s;
+    text-align: center;
+    overflow:hidden;
+}
+.grid-item:hover{
+    z-index: 1;
+    width:380px;
+    height:260px;
+    margin:-80px 0 0 -80px;
+    background-color:rgb(245, 245, 181);
+}
+.grid-item > .static-btn,
+.grid-item > p{
+    font-size:18px;
+    opacity:0;
+    transition:all 1s ease;
+}
+.grid-item:hover >.static-btn,
+.grid-item:hover > p,
+.grid-item:hover > h1{
+    font-size:25px;
+    opacity:1;
+}
+.grid-item > .cover{
+ opacity:1;   
+ position:absolute;
+ transition: opacity 2s;
+ left:0%;
+ top:25%;
+ margin:auto;
+ display:flex;
+ justify-content: center;
+ text-align: center;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ text-shadow:1px 1px rgb(42, 111, 115);
+}
+.grid-item:hover > .cover {
+    opacity:0;
+    transition: opacity .1s;
+}
+.static-btn{
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(109, 109, 109);
+    font-size:22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom:10px;
+    left:120px;
+    overflow:hidden;
+}
+.btn {
+    border:solid 2px black;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom:10px;
+    left:120px;
+    transition:all 1s;
+}
+.btn:hover{
+    font-size:25px;
+    background-color:rgba(255, 255, 255, 0.555);
+    color:rgb(0, 0, 0);
+}
+.content-body{
+    height:100%;
+    background:linear-gradient(45deg,rgb(176, 224, 255),rgb(255, 142, 142));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+}
+.background{
+    background-color:rgba(0, 0, 0, 0.09);
+    width:40%;
+    position:absolute;
+    border-radius:2%;
+    margin-left: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background > p{
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    color:rgb(0, 0, 0, 1);
+    letter-spacing: 3px;
+    width:80%;
+    margin-left:10%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:50px;
+    font-size:large;
+}
+.background > h1{
+    text-align: center;
+    position:relative;
+    overflow:hidden;
+    color:rgb(0, 0, 0, 1);
+    letter-spacing: 4px;
+    width:90%;
+    padding-left:5%;
+    font-family: 'DM Serif Display', cursive;
+}
+.background > .bib-entry{
+    text-align:left;
+    position:relative;
+    overflow:hidden;
+    color:rgb(0, 0, 0, 1);
+    letter-spacing: 3px;
+    width:80%;
+    margin-left:10%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:50px;
+    font-size:large;
+}
+.background > h2,
+.background > h3 {
+    text-align: center;
+    position:relative;
+    overflow:hidden;
+    color:rgb(0, 0, 0, 1);
+    letter-spacing: 4px;
+    width:90%;
+    padding-left:5%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:10px;
+}
+.side{
+    float:right;
+    position:relative;
+    margin-top:130px;
+    width:200px;
+    z-index: 1;
+    right:10%
+}
+.side-img{
+    border-radius:10px;
+    transition:border-radius .5s;
+    width:350px;
+    height:350px;
+    opacity:.5;
+}
+.side-img:hover{
+    border-radius:5px;
+    
+}
+.img-credit {
+    opacity:0;
+    color:rgba(0, 0, 0, 0.332);
+    transition:opacity .5s;
+    text-decoration: none;
+    text-align:center;
+    position:absolute;
+}
+.side-img:hover~.img-credit{
+    opacity:1;
+}
+.in-text-citation{
+    text-decoration: none;
+    color:rgb(48, 48, 48);
+    font-family: Arial, Helvetica, sans-serif;
+}
