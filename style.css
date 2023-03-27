@@ -38,14 +38,14 @@
 }
 .grid-item > .static-btn,
 .grid-item > p{
-    font-size:18px;
+    font-size:17px;
     opacity:0;
     transition:all 1s ease;
 }
 .grid-item:hover >.static-btn,
 .grid-item:hover > p,
 .grid-item:hover > h1{
-    font-size:22px;
+    font-size:23px;
     opacity:1;
 }
 .grid-item > .cover{
