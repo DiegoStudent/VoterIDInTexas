@@ -45,7 +45,7 @@
 .grid-item:hover >.static-btn,
 .grid-item:hover > p,
 .grid-item:hover > h1{
-    font-size:25px;
+    font-size:23px;
     opacity:1;
 }
 .grid-item > .cover{
